@@ -6,27 +6,33 @@ body{
   align-items: center; */ 
 }
 
+hr {
+    width: 100%;
+    border: 1px solid #EBEBEB;
+}
+
 .main-information {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 717px;
 
 }
 
 .background-image {
     display: flex;
-    background-image: url("./public/backgroundImage.jpg");
+    background: url("./public/lukas-blazek-GnvurwJsKaY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 1;
     height: 135px;
     width: 100%;
+    padding-left:31.38px;
     position: relative;
 }
 
 .background-image img {
     width: 106.64px; 
     position: absolute;
-    bottom: 0;
-    transform: translateY(35%);
+    transform: translateY(59px);
     border-radius: 100px;
 }
 
@@ -34,12 +40,13 @@ body{
     background-color: #FFF;
     width: 100%;
     height: 185px;
+    padding-left: 22px;
     /* padding-top: 100px; */
 }
 
 .data {
     position: relative;
-    top: 70px;
+    top: 43px;
     line-height: 30px;
 }
 
@@ -69,16 +76,119 @@ line-height: 15px;
 }
 
 .buttons input {
-    background-color: #0B65C2;
-    color: #FFF;
     border: 0;
-    width: 131px;
-    height: 21px;
-    border-radius: 20px;
+    border-radius: 15px;
     font-family: Rambla;
     font-style: normal;
     font-weight: bold;
     font-size: 11px;
     line-height: 13px;
+}
 
+#interest {
+    background-color: #0B65C2; 
+    color: #fff;
+    width: 131px;
+    height: 21px;
+    transition: background-color 0.2s linear;
+}
+
+#interest:hover {
+    background-color: #004182;
+}
+
+#section:hover,#more:hover{
+    border: 2px solid #666666;
+}
+
+#section {
+    width: 104px;
+    height: 21px;
+    background-color: #FFF;
+    border: 1px solid #666666;
+    transition: border 0.1s linear;
+}
+
+#more {
+    width: 54px;
+    height: 21px;
+    background-color: #FFF;
+    border: 1px solid #666666;
+    transition: border 0.1s linear;
+}
+
+.company-photo {
+    width: 35px;
+    height: 35px;
+    padding-right: 21px;
+    margin-bottom: 40px;
+}
+
+.company-photo img {
+    width: 100%;
+
+}
+
+.companies {
+    display: flex;
+}
+
+.experience {
+    padding-left: 21px;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.education {
+    padding-left: 21px;
+}
+
+.company-title {
+    font-family: Rambla;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+
+.company-subtitle {
+    font-family: Rambla;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    
+}
+
+.company-period-place {
+    font-family: Rambla;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #666666;
+}
+
+
+
+.company-information {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-bottom: 40px;
+}
+
+.institute {
+    display: flex;
+    align-items: center;
 }
