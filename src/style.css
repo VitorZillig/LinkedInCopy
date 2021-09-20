@@ -1,31 +1,73 @@
-:root {
-    --backgroundColor: #EEF3F7
+div {
+    background-color: #FFF;
 }
 
-body {
-    padding: 0px 3px 8px 3px;
-    background-color: var(--backgroundColor);
+body{
+  background-color: #F3F2EE;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+    width: 200px;
+    height: 25px;
+    font-family: Rambla, sans-serif, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h2 {
+    width: 341px;
+    font-family: Rambla, sans-serif, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+hr {
+    width: 100%;
+    margin-left: 53.31px;
+    border: 1px solid #EBEBEB;
+}
+
+.main-information {
     display: flex;
     flex-direction: column;
+    width: 717px;
 }
 
-.menu {
-    display: flex;
-    background-color: #FFF;
+
+/* NAVBAR */
+
+nav {
     width: 100%;
     height: 59px;
-    align-items: center;
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    position: sticky;
+    top:0;
+    z-index: 1;
 }
 
-main {
 
+.logo-search {
+    display: flex;
 }
-
-/* LINKEDIN LOGO */
 
 .logo {
-    height: 34px;
     width: 34px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    margin-right: 8px;
+    cursor: pointer;
 }
 
 .logo img {
@@ -33,100 +75,296 @@ main {
     height: 100%;
 }
 
-/* */
-
-/* LOGO AND SEARCH BAR */
-
-.logo-bar {
+.search-bar {
     display: flex;
-    gap: 10px;
-}
-
-/* SEARCH BAR */
-
-nav input {
     width: 235px;
+}
+
+.search-bar input {
+    width: 100%;
     height: 34px;
-    background: url("../public/loupe.png") no-repeat scroll 11px 11px;
-    background-size: 11px 11px;
-    background-color: #EEF3F7;
-    text-align: center;
+    padding: 0;
+    border: 0;
+    background-color:#EEF3F7;
+    font-family: 'Roboto', sans-serif, monospace;
     font-size: 12px;
-    border:0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.06px;
+    letter-spacing: 0em;
 }
 
-nav {
+.search-loupe{
+    background-color:#EEF3F7;
+    height: 34px;
+    width: 20%;
     display: flex;
-    background-color: aqua;
+    cursor: text;
 }
 
+.search-loupe img {
+    width: 11px;
+    height: 11px;
+    cursor: text; 
+    margin: 12px 8px 11px 15px;   
+}
 
+.section-content {
+    max-width: 717px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-/*  */
+.menu-icons {
+    display: flex;
+    width: 45%;
+    height: 34px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
-/* PROFILE */
-
-.profile {
+.icon {
+    height: 20px;
+    opacity: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
 }
 
-.profile span {
-    font-size: 10px;
-}
-
-.profile-photo {
-    width: 25.39px;
-    height: 25.39px;
-}
-
-.profile-photo img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
-
-/*  */
-
-/* MENU ITEMS */
-
-.menu-item img {
+.icon img {
     width: 20px;
     height: 20px;
+    margin-bottom: 5px;
+}
+
+.icon:hover,.user-photo:hover {
+    opacity: 100%;
 }
 
 .menu-item {
-    width: 34px;
-    height: 34px;
+    display: flex;
+    cursor: pointer;
+}
+
+figcaption {
+    font-family: 'Ropa Sans', sans-serif, monospace;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 11px; */
+    opacity: 65%;
+}
+
+.user {
+    width: 23.39px;
+    height: 23.39px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    cursor: pointer;
+    justify-content: flex-end;
 }
 
-.menu-item span{
-    font-size: 10px;
-    text-align: center;
-    
-} 
-
-.menu ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    /* align-items: ; */
+.user img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    margin-bottom: 2.61px;
 }
+
+/*  */
+
+
+/* BACKGROUND IMAGE */
 
 .background-image {
-
+    display: flex;
+    background: url("../public/lukas-blazek-GnvurwJsKaY-unsplash.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: 1;
+    height: 135px;
+    width: 100%;
+    padding-left:31.38px;
+    position: relative;
 }
 
 .background-image img {
+    width: 106.64px; 
+    position: absolute;
+    transform: translateY(59px);
+    border-radius: 100px;
+}
+
+/*  */
+
+/* PROFILE INFORMATIONS */
+
+.personal-data {
+    background-color: #FFF;
     width: 100%;
-    height: 100%;
+    height: 185px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    border-radius: 0px 0px 4px 4px;
 }
 
-.user-info {
+.personal-data span {
+    
+    font-family: 'Rambla', Helvetica, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    }
+
+.data {
+    position: relative;
+    top: 43px;
+    line-height: 30px;
+}
+
+.buttons input {
+    border: 0;
+    border-radius: 15px;
+    font-family: 'Rambla', Helvetica, monospace;
+    font-weight: bold;
+    font-size: 11px;
+    margin-right: 14px;
+}
+
+#interest {
+    background-color: #0B65C2; 
+    color: #fff;
+    width: 131px;
+    height: 21px;
+    transition: background-color 0.2s linear;
+}
+
+#interest:hover {
+    background-color: #004182;
+}
+
+#section:hover,#more:hover{
+    border: 2px solid #666666;
+    background-color:rgba(0, 0, 0, 0.08);
+}
+
+#section {
+    width: 104px;
+    height: 21px;
+    background-color: #FFF;
+    border: 1px solid #666666;
+    transition: border 0.1s linear;
+}
+
+#more {
+    width: 54px;
+    height: 21px;
+    background-color: #FFF;
+    border: 1px solid #666666;
+    transition: border 0.1s linear;
+}
+
+
+/*  */
+
+/* EXPERIENCE SECTION */
+
+.company-photo {
+    width: 35px;
+    height: 35px;
+    padding-right: 21px;
+    margin-bottom: 40px;
+}
+
+.company-photo img {
+    width: 100%;
 
 }
+
+.companies {
+    display: flex;
+}
+
+.experience {
+    padding-left: 21px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.title {
+    margin-bottom: 30px;
+    margin-top: 16px;
+}
+
+
+/*  */
+
+/* EDUCATION */
+
+.education {
+    padding-left: 21px;
+    margin-bottom: 38px;
+}
+
+.company-title {
+    font-family: 'Rambla', sans-serif, monospace;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+
+.company-subtitle {
+    font-family: 'Rambla', sans-serif, monospace;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    
+}
+
+.company-period-place {
+    font-family: 'Rambla', sans-serif, monospace;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #666666;
+}
+
+.company-information {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-bottom: 40px;
+}
+
+.institute {
+    display: flex;
+    align-items: center;
+}
+
+/*  */
+
+
+
+
+
+
+
+
+

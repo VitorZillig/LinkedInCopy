@@ -5,86 +5,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
-            <section class="logo-bar">
+    <nav>
+        <div class="section-content">
+            <section class="logo-search">
                 <div class="logo">
-                    <img src="../public/linkedin.jpg" alt="LinkedIn Logo" />
+                    <img src="../public/linkedin.jpg" alt="Logo LinkedIn">
                 </div>
-                <input type="text" name="search-bar" id="" placeholder="Pesquisar" />
+                <div class="search-bar">
+                    <div class="search-loupe">
+                        <label for="search">
+                            <img src="../public/loupe.png" alt="lupa">
+                        </label>
+                    </div>
+                    <input id="search" type="text" placeholder="Pesquisar" />
+                </div>
             </section>
-            <ul>
-                <li>
-                    <div class="menu-item" id="home">
-                        <img src="../public/home-icon-silhouette.png" alt="Home">
-                        <span>Início</span>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="menu-item" id="network">
-                        <img src="../public/group-of-three-men-standing-side-by-side-hugging-each-other.png" alt="Home">
-                        <span>Minha rede</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="menu-item" id="jobs">
-                        <img src="../public/portfolio.png" alt="Home">
-                        <span>Vagas</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="menu-item" id="chat">
-                        <img src="../public/chat.png" alt="Home">
-                        <span>Mensagens</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="menu-item" id="notifications">
-                        <img src="../public/bell.png" alt="Home">
-                        <span>Notificações</span>
-                    </div>
-                </li>
-            </ul>
-            <div class="profile">
-                <div class="profile-photo">
-                    <img src="../public/profileImage.jpg" alt="Profile Photo">
+            <section class="menu-icons">
+                <div class="menu-item">
+                    <figure class="icon">
+                        <img src="../public/home-icon-silhouette.png" alt="Início">
+                        <figcaption>Início</figcaption>
+                    </figure>
                 </div>
-                <span>Eu</span>
-            </div>
-
-        </nav>
-    </header>
-    <main>
-        <section class="initial-info">
-            <div class="background-image">
-                <img src="../public/backgroundImage.jpg" alt=""/>
-            </div>
-            <div class="user-info">
-                <div>
-
+                <div class="menu-item">
+                    <figure class="icon">
+                        <img src="../public/group-of-three-men-standing-side-by-side-hugging-each-other.png"
+                            alt="Minha Rede" />
+                        <figcaption>Minha Rede</figcaption>
+                    </figure>
                 </div>
+                <div class="menu-item">
+                    <figure class="icon">
+                        <img src="../public/portfolio.png" alt="Vagas">
+                        <figcaption>Vagas</figcaption>
+                    </figure>
+                </div>
+                <div class="menu-item">
+                    <figure class="icon">
+                        <img src="../public/chat.png" alt="Mensagens">
+                        <figcaption>Mensagens</figcaption>
+                    </figure>
+                </div>
+                <div class="menu-item">
+                    <figure class="icon">
+                        <img src="../public/bell.png" alt="Notificações">
+                        <figcaption>Notificações</figcaption>
+                    </figure>
+                </div>
+                <section class="user-photo">
+                    <figure class="user">
+                        <img src="../public/profileImage.jpg" alt="Usuário">
+                        <figcaption>Eu</figcaption>
+                    </figure>
+                </section>
+            </section>
+        </div>
+    </nav>
+    <section class="main-information">
+        <div class="background-image">
+            <img src="../public/profileImage.jpg" alt="Foto do perfil" />
+        </div>
+        <div class="personal-data">
+            <div class="data">
                 <h1>Vitor Henrique Grego Zillig</h1>
-                <h2>Desenvolvedor Full Stack</h2>                   
+                <h2>Desenvolvedor Full Stack</h2>
                 <span>Porto Alegre, Rio Grande do Sul, Brasil</span>
+                <div class="buttons">
+                    <input id="interest" type="button" value="Tenho interesse em..." />
+                    <input id="section" type="button" value="Adicionar seção" />
+                    <input id="more" type="button" value="Mais" />
+                </div>
             </div>
-        </section>
-        <section class="experience">
+        </div>
+        <div class="experience">
+            <div class="title">
+                <h2>Experiência</h2>
+            </div>
 
-
-        </section>
-        <section class="education">
-
-        </section>
-    </main>
-
-
+            <div class="companies">
+                <div class="company-photo">
+                    <img src="../public/magne-photo.png" alt="Foto WHZ">
+                </div>
+                <div class="company-information">
+                    <span class="company-title" id="role">Desenvolvedor Júnior</span>
+                    <span class="company-subtitle" id="company-name">WHZ</span>
+                    <span class="company-period-place" id="period">mar. de 2021 - o momento (7 meses)</span>
+                    <span class="company-period-place" id="place">Rio Grande do Sul, Brasil</span>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="education">
+            <div class="title">
+                <h2>Formação Acadêmica</h2>
+            </div>
+            <div class="education-institutes">
+                <div class="institute">
+                    <div class="company-photo">
+                        <img src="../public/unisinos.jpeg" alt="Foto Unisinos">
+                    </div>
+                    <div class="company-information">
+                        <span class="company-title" id="institute-name">Universidade do Vale do Rio dos Sinos</span>
+                        <span class="company-subtitle">Ciência da Computação</span>
+                        <span class="company-period-place">2021-2024</span>
+                    </div>
+                </div>
+                <div class="institute">
+                    <div class="company-photo">
+                        <img src="../public/letsCode.jpeg" alt="Foto Let's Code">
+                    </div>
+                    <div class="company-information">
+                        <span class="company-title" id="institute-name">Let's Code</span>
+                        <span class="company-subtitle">Santander Coders - Web Fullstack . Programação de
+                            Computadores</span>
+                        <span class="company-period-place">2021-2022</span>
+                    </div>
+                </div>
+                <div class="institute">
+                    <div class="company-photo">
+                        <img src="../public/senai.jpeg" alt="Foto SENAI">
+                    </div>
+                    <div class="company-information">
+                        <span class="company-title" id="institute-name">SENAI RS</span>
+                        <span class="company-subtitle">Redes de Computadores . Técnico em Redes de Computadores - módulo
+                            básico</span>
+                        <span class="company-period-place">2019-2020</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
